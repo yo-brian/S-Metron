@@ -16,7 +16,9 @@
 ```shell
 wget https://getcomposer.org/installer -O composer.phar && php composer.phar && php composer.phar install
 ```
-
+提示错误的话：
+Package patchwork/utf8 is abandoned, you should avoid using it. Use symfony/poly                                                                                                                                                             fill-mbstring or symfony/string instead.
+修复方法：
 
 #### 6.复制配置文件
 
