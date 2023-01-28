@@ -18,7 +18,15 @@ wget https://getcomposer.org/installer -O composer.phar && php composer.phar && 
 ```
 提示错误的话：
 Package patchwork/utf8 is abandoned, you should avoid using it. Use symfony/poly                                                                                                                                                             fill-mbstring or symfony/string instead.
-修复方法：
+
+Carbon 1 is deprecated, see how to migrate to Carbon 2.
+解决：
+在composer.json文件里面添加这2行
+```shell
+"kylekatarnls/laravel-carbon-2": "^1.0.0",
+"nesbot/carbon": "2.16.3 as 1.34.0"
+```
+修复后，执行composer update
 
 #### 6.复制配置文件
 
