@@ -38,3 +38,6 @@ public/.user.ini
 resources/views/material/analytics.tpl
 
 test/tpl_files.txt
+
+/resources/views/metron/admin/user/index.tpl
+src/Command/Bob.php

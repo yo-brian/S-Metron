@@ -66,7 +66,7 @@
                                 <div class="card-inner">
                                     <div class="form-group form-group-label">
                                         <label class="floating-label" for="new_user_money"> 用户密码 </label>
-                                        <input class="form-control maxwidth-edit" id="new_user_passwd" type="text" value="12345678">
+                                        <input class="form-control maxwidth-edit" id="new_user_passwd" type="text" value="123qweasdzxc">
                                     </div>
                                 </div>
 
