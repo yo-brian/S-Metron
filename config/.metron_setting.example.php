@@ -125,6 +125,7 @@ $_MT['nodes_regex'] = '/\[(.*?)\]/';     // 节点筛选设置中节点名称缩
 $_MT['index_sub'] = [
     'ssr',
     'v2ray',
+    'v2ray-vless',
     'surge',
     'clash',
     'surfboard',
