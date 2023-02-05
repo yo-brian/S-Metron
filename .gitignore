@@ -41,4 +41,5 @@ test/tpl_files.txt
 
 resources/views/metron/admin/user/index.tpl
 src/Command/Bob.php
-resources/views/metron/user/tutorialemail
+resources/views/metron/user/tutorial
+resources/views/metron/include/index/client.tpl
