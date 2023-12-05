@@ -225,6 +225,9 @@ return function (SlimApp $app) {
         $this->get('/relay/path_search/{id}',   App\Controllers\Admin\RelayController::class . ':path_search');
         $this->post('/relay/ajax',              App\Controllers\Admin\RelayController::class . ':ajax_relay');
 
+        $this->get('/paylist',                   App\Controllers\Admin\PayListController::class . ':index');
+        $this->post('/paylist/ajax',             App\Controllers\Admin\PayListController::class . ':ajax_paylist');
+
         // Shop Mange
         $this->get('/shop',                     App\Controllers\Admin\ShopController::class . ':index');
         $this->post('/shop/ajax',               App\Controllers\Admin\ShopController::class . ':ajax_shop');
@@ -296,7 +299,11 @@ return function (SlimApp $app) {
 
 
         $this->get('/coupon',                   App\Controllers\AdminController::class . ':coupon');
+        $this->get('/coupon/create',            App\Controllers\AdminController::class . ':createCoupon');
+        $this->get('/coupon/{id}/edit',         App\Controllers\AdminController::class . ':editCoupon');
+        $this->put('/coupon/{id}',              App\Controllers\AdminController::class . ':updateCoupon');
         $this->post('/coupon',                  App\Controllers\AdminController::class . ':addCoupon');
+        $this->delete('/coupon',                App\Controllers\AdminController::class . ':deleteCoupon');
         $this->post('/coupon/ajax',             App\Controllers\AdminController::class . ':ajax_coupon');
 
         $this->get('/profile',                  App\Controllers\AdminController::class . ':profile');
