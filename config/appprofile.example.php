@@ -235,6 +235,7 @@ $_ENV['Surge2_Profiles'] = [
     ]
 ];
 
+/*
 /**
  * Clash 配置文件定义
  */
@@ -348,6 +349,57 @@ $_ENV['Clash_Profiles'] = [
         ]
     ]
 ];
+*/
+/**
+ * Clash 配置文件定义
+ */
+$_ENV['Clash_Profiles'] = [
+    'default' => [
+        'Checks' => [],
+        'General' => [
+            'port'                => 7890,
+            'socks-port'          => 7891,
+            'redir-port'          => 7892,
+            'allow-lan'           => false,
+            'mode'                => 'Rule',
+            'log-level'           => 'silent',
+            'external-controller' => '0.0.0.0:9090',
+            'secret'              => ''
+        ],
+        'Proxy' => [],
+        'ProxyGroup' => [
+            [
+                'name' => '🚀 节点选择',
+                'type' => 'select',
+                'content' => [
+                    'regex' => '(.*)',
+                ]
+            ],
+            [
+                'name' => '🎯 全球直连',
+                'type' => 'select',
+                'content' => [
+                    'right-proxies' => [
+                        'DIRECT',
+                    ],
+                ]
+            ],
+            [
+                'name' => '🐟 漏网之鱼',
+                'type' => 'select',
+                'content' => [
+                    'right-proxies' => [
+                        'DIRECT',
+                    ],
+                ]
+            ],            
+        ],
+        'Rule' => [
+            'source' => 'clash/br-raoguo.tpl'
+        ]
+    ]
+];
+
 
 /**
  * Surfboard 配置文件定义
