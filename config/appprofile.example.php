@@ -235,10 +235,11 @@ $_ENV['Surge2_Profiles'] = [
     ]
 ];
 
-/*
+
 /**
  * Clash 配置文件定义
  */
+/*
 $_ENV['Clash_Profiles'] = [
     'default' => [
         'Checks' => [],
