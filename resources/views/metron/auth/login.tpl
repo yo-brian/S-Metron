@@ -38,18 +38,24 @@
                                         <input type="checkbox" name="remember" id="remember-me" checked="checked"/>记住我
                                         <span></span>
                                     </label>
+                                    <!--
                                     <a href="/password/reset" class="text-white font-weight-bold">忘记密码 ?</a>
+                                    -->
                                 </div>
                                 <div class="form-group text-center mt-10" style="white-space:nowrap;">
                                     <button type="button" id="login_submit" class="btn btn-pill btn-outline-white font-weight-bold opacity-90 px-15 py-3">登录</button>
+                                    <!--
                                     <span class="m-3">或</span>
                                     <a class="btn btn-pill btn-outline-white font-weight-bold opacity-90 px-15 py-3" data-toggle="modal" data-target="#telegram-login-modal">使用 Telegram 登录</a>
+                                    -->
                                 </div>
                             </form>
+                            <!--
                             <div class="mt-10">
                                 <span class="opacity-70 mr-4">还没有账号 ?</span>
                                 <a href="/auth/register" class="text-white font-weight-bold">立即注册</a>
                             </div>
+                            -->
                         </div>
 
                         <div class="modal fade" id="telegram-login-modal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
