@@ -1,6 +1,7 @@
   - DOMAIN-SUFFIX,smtp,🎯 全球直连
   - DOMAIN-KEYWORD,aria2,🎯 全球直连
 
+  - DOMAIN-KEYWORD,tiktok,🚀 节点选择
   - DOMAIN-SUFFIX,claude.ai,🚀 节点选择
   - DOMAIN-SUFFIX,oaistatic.com,🚀 节点选择
   - DOMAIN-SUFFIX,jable.tv,🚀 节点选择
