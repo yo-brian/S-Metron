@@ -15,7 +15,7 @@ return function (SlimApp $app) {
     $app->get('/405',       App\Controllers\HomeController::class . ':page405');
     $app->get('/500',       App\Controllers\HomeController::class . ':page500');
     $app->get('/tos',       App\Controllers\HomeController::class . ':tos');
-    $app->get('/staff',     App\Controllers\HomeController::class . ':staff');
+#    $app->get('/staff',     App\Controllers\HomeController::class . ':staff');
     $app->get('/indexold',  App\Controllers\HomeController::class . ':indexold');
 
     // other
@@ -174,12 +174,12 @@ return function (SlimApp $app) {
         $this->get('/login',            App\Controllers\AuthController::class . ':login');
         $this->post('/qrcode_check',    App\Controllers\AuthController::class . ':qrcode_check');
         $this->post('/login',           App\Controllers\AuthController::class . ':loginHandle');
-        $this->post('/qrcode_login',    App\Controllers\AuthController::class . ':qrcode_loginHandle');
-        $this->get('/register',         App\Controllers\AuthController::class . ':register');
-        $this->post('/register',        App\Controllers\AuthController::class . ':registerHandle');
+#        $this->post('/qrcode_login',    App\Controllers\AuthController::class . ':qrcode_loginHandle');
+#        $this->get('/register',         App\Controllers\AuthController::class . ':register');
+#        $this->post('/register',        App\Controllers\AuthController::class . ':registerHandle');
         $this->post('/send',            App\Controllers\AuthController::class . ':sendVerify');
         $this->get('/logout',           App\Controllers\AuthController::class . ':logout');
-        $this->get('/telegram_oauth',   App\Controllers\AuthController::class . ':telegram_oauth');
+#        $this->get('/telegram_oauth',   App\Controllers\AuthController::class . ':telegram_oauth');
         $this->get('/login_getCaptcha', App\Controllers\AuthController::class . ':getCaptcha');
     })->add(new Guest());
 
